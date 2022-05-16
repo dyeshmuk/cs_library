@@ -16,7 +16,7 @@ We can use the graph traversal algorithms DFS or BFS here, both have the same ti
 * Recursive version is easy to implement.
 * Starts at the root node and explores as far as possible along each branch before backtracking.
 
-##### Pros:
+##### Cons:
 * Limited Call-stack size might cause the StackOverflowError.
 * Iterative implemetation requires an extra memory(Stack Data Structure).
 
@@ -24,11 +24,18 @@ We can use the graph traversal algorithms DFS or BFS here, both have the same ti
 ##### Pros:
 * Level-Order traversal. Starts at the tree root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level.
 
-##### Pros:
+##### Cons:
 * Implementation reqires an extra memory(Queue data structure).
 
-#### Prefered Solution
+### Prefered Solution
 ![Imgur](doc/web-crawler-BFS.svg)
 
 It is preferable to traverse all links of a particular page and then go to another page. Thus, Level order traversal is ideal for this case. Since we don't have unlimited memory, we have to limit number of pages to visit by introducing `MAX_NUMBER_OF_PAGES`.
 
+
+### How to run
+Compile and run:
+```
+kotlinc-jvm main.kt
+kotlin MainKt
+```
