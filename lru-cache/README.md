@@ -1,3 +1,5 @@
+## Least Recently Used (LRU) Cache.
+
 ### Abstract
 Least Recently Used (LRU) is a common caching strategy. It defines the policy to remove the least recently used elements from the cache to make room for new elements when the cache is full(Cache eviction). 
 
@@ -10,3 +12,12 @@ Least Recently Used (LRU) is a common caching strategy. It defines the policy to
 
 ### High-level design
 ![Imgur](doc/lru-diagram.svg)
+
+### How to run
+```ruby
+# compile first
+javac Main.java
+
+# then run the class
+java Main
+```
