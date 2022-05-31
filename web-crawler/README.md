@@ -28,7 +28,7 @@ We can use the graph traversal algorithms DFS or BFS here, both have the same ti
 * Implementation reqires an extra memory(Queue data structure).
 
 ### Prefered Solution
-![Imgur](doc/web-crawler-BFS.svg)
+![Imgur](doc/web-crawler-diagram.svg)
 
 It is preferable to traverse all links of a particular page and then go to another page. Thus, Level order traversal is ideal for this case. Since we don't have unlimited memory, we have to limit number of pages to visit by introducing `MAX_NUMBER_OF_PAGES`.
 
